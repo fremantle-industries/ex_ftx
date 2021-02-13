@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/markets/BTC/USD/orderbook?"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":{\"asks\":[[48117.0,3.9445],[48118.0,0.0808],[48127.0,0.0026],[48128.0,0.1777],[48129.0,0.0816],[48130.0,0.0001],[48132.0,0.1931],[48133.0,0.0589],[48137.0,7.8581],[48139.0,0.0815],[48141.0,0.9241],[48143.0,0.0623],[48145.0,0.5],[48147.0,0.604],[48148.0,0.5426],[48150.0,0.0822],[48154.0,1.18],[48163.0,0.0004],[48170.0,0.795],[48171.0,0.0623]],\"bids\":[[48110.0,0.0004],[48105.0,3.151],[48100.0,0.1001],[48099.0,0.1442],[48097.0,0.0548],[48089.0,0.2713],[48085.0,0.0708],[48079.0,0.0623],[48078.0,6.2654],[48077.0,0.1045],[48070.0,0.002],[48069.0,0.0623],[48068.0,1.2],[48067.0,0.0003],[48064.0,0.742],[48061.0,0.0004],[48059.0,0.0624],[48057.0,0.1626],[48051.0,1.4045],[48050.0,0.0004]]},\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 16 Feb 2021 01:46:14 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dddd737d4bc25375696f65a3723b24ab71613439974; expires=Thu, 18-Mar-21 01:46:14 GMT; path=/; domain=.ftx.com; HttpOnly; SameSite=Lax; Secure",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0",
+        "ETag": "W/\"7369d77802aa87680855a45535837c50\"",
+        "CF-Cache-Status": "MISS",
+        "cf-request-id": "084a1d53740000dee9c8919000000001",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "CF-RAY": "622397ff1acedee9-SEA",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

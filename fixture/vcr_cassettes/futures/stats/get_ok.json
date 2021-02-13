@@ -1,0 +1,39 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/futures/BTC-PERP/stats?"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":{\"nextFundingRate\":6.9e-05,\"nextFundingTime\":\"2021-02-16T02:00:00+00:00\",\"openInterest\":22798.5454,\"volume\":51741.6576},\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 16 Feb 2021 01:46:16 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d2a3d9ce73f621dc4a1235134559ed4d11613439976; expires=Thu, 18-Mar-21 01:46:16 GMT; path=/; domain=.ftx.com; HttpOnly; SameSite=Lax; Secure",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=10",
+        "ETag": "W/\"156f54020000b04bb6cfdda1a357ef59\"",
+        "CF-Cache-Status": "HIT",
+        "Age": "3",
+        "cf-request-id": "084a1d5b8a0000dee9dc02e000000001",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "CF-RAY": "6223980c1fafdee9-SEA",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

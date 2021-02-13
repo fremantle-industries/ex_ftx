@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/markets/BTC/USD/trades?"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":[{\"id\":460496426,\"liquidation\":false,\"price\":48111.0,\"side\":\"buy\",\"size\":0.0001,\"time\":\"2021-02-16T01:46:13.384967+00:00\"},{\"id\":460496332,\"liquidation\":false,\"price\":48112.0,\"side\":\"sell\",\"size\":0.0004,\"time\":\"2021-02-16T01:46:10.208852+00:00\"},{\"id\":460495794,\"liquidation\":false,\"price\":48126.0,\"side\":\"sell\",\"size\":0.0548,\"time\":\"2021-02-16T01:45:55.639784+00:00\"},{\"id\":460495440,\"liquidation\":false,\"price\":48148.0,\"side\":\"buy\",\"size\":0.0001,\"time\":\"2021-02-16T01:45:46.183331+00:00\"},{\"id\":460495387,\"liquidation\":false,\"price\":48129.0,\"side\":\"sell\",\"size\":0.1665,\"time\":\"2021-02-16T01:45:44.792928+00:00\"},{\"id\":460495268,\"liquidation\":false,\"price\":48139.0,\"side\":\"buy\",\"size\":0.0216,\"time\":\"2021-02-16T01:45:40.892132+00:00\"},{\"id\":460494884,\"liquidation\":false,\"price\":48164.0,\"side\":\"sell\",\"size\":0.0195,\"time\":\"2021-02-16T01:45:30.716470+00:00\"},{\"id\":460494883,\"liquidation\":false,\"price\":48164.0,\"side\":\"sell\",\"size\":0.04,\"time\":\"2021-02-16T01:45:30.716039+00:00\"},{\"id\":460494881,\"liquidation\":false,\"price\":48164.0,\"side\":\"sell\",\"size\":0.01,\"time\":\"2021-02-16T01:45:30.682151+00:00\"},{\"id\":460494865,\"liquidation\":false,\"price\":48165.0,\"side\":\"buy\",\"size\":0.0091,\"time\":\"2021-02-16T01:45:30.314909+00:00\"},{\"id\":460494864,\"liquidation\":false,\"price\":48163.0,\"side\":\"buy\",\"size\":0.0004,\"time\":\"2021-02-16T01:45:30.314909+00:00\"},{\"id\":460494863,\"liquidation\":false,\"price\":48159.0,\"side\":\"buy\",\"size\":0.0001,\"time\":\"2021-02-16T01:45:30.314909+00:00\"},{\"id\":460494694,\"liquidation\":false,\"price\":48132.0,\"side\":\"sell\",\"size\":0.0037,\"time\":\"2021-02-16T01:45:27.433324+00:00\"},{\"id\":460494456,\"liquidation\":false,\"price\":48129.0,\"side\":\"sell\",\"size\":0.0008,\"time\":\"2021-02-16T01:45:18.103407+00:00\"},{\"id\":460493525,\"liquidation\":false,\"price\":48127.0,\"side\":\"sell\",\"size\":0.0016,\"time\":\"2021-02-16T01:44:50.563159+00:00\"},{\"id\":460493426,\"liquidation\":false,\"price\":48120.0,\"side\":\"sell\",\"size\":0.0705,\"time\":\"2021-02-16T01:44:46.471468+00:00\"},{\"id\":460493425,\"liquidation\":false,\"price\":48122.0,\"side\":\"sell\",\"size\":0.0108,\"time\":\"2021-02-16T01:44:46.471468+00:00\"},{\"id\":460493424,\"liquidation\":false,\"price\":48122.0,\"side\":\"sell\",\"size\":0.013,\"time\":\"2021-02-16T01:44:46.471468+00:00\"},{\"id\":460493423,\"liquidation\":false,\"price\":48132.0,\"side\":\"sell\",\"size\":0.0772,\"time\":\"2021-02-16T01:44:46.471468+00:00\"},{\"id\":460493318,\"liquidation\":false,\"price\":48122.0,\"side\":\"sell\",\"size\":0.0051,\"time\":\"2021-02-16T01:44:42.963271+00:00\"}],\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 16 Feb 2021 01:46:17 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d2a3d9ce73f621dc4a1235134559ed4d11613439976; expires=Thu, 18-Mar-21 01:46:16 GMT; path=/; domain=.ftx.com; HttpOnly; SameSite=Lax; Secure",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0",
+        "ETag": "W/\"3ec22e691cde4d2df14bcc5124eb12fa\"",
+        "CF-Cache-Status": "MISS",
+        "cf-request-id": "084a1d5dc20000dee9d7b6c000000001",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "CF-RAY": "6223980f9d04dee9-SEA",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

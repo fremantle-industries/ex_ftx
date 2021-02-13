@@ -21,29 +21,20 @@ https://docs.ftx.com/#overview
 
 ## REST API
 
-#### Subaccounts
-
-- [ ] `GET /subaccounts`
-- [ ] `POST /subaccounts`
-- [ ] `POST /subaccounts/update_name`
-- [ ] `DELETE /subaccounts`
-- [ ] `GET /subaccounts/{nickname}/balances`
-- [ ] `POST /subaccounts/transfer`
-
 #### Markets
 
-- [ ] `GET /markets`
-- [ ] `GET /markets/{market_name}`
-- [ ] `GET /markets/{market_name}/orderbook?depth={depth}`
-- [ ] `GET /markets/{market_name}/trades?limit={limit}&start_time={start_time}&end_time={end_time}`
+- [x] `GET /markets`
+- [x] `GET /markets/{market_name}`
+- [x] `GET /markets/{market_name}/orderbook?depth={depth}`
+- [x] `GET /markets/{market_name}/trades?limit={limit}&start_time={start_time}&end_time={end_time}`
 - [ ] `GET /markets/{market_name}/candles?resolution={resolution}&limit={limit}&start_time={start_time}&end_time={end_time}`
 
 #### Futures
 
-- [ ] `GET /futures`
-- [ ] `GET /futures/{future_name}`
-- [ ] `GET /futures/{future_name}/stats`
-- [ ] `GET /funding_rates`
+- [x] `GET /futures`
+- [x] `GET /futures/{future_name}`
+- [x] `GET /futures/{future_name}/stats`
+- [x] `GET /funding_rates`
 - [ ] `GET /indexes/{index_name}/weights`
 - [ ] `GET /expired_futures`
 - [ ] `GET /indexes/{market_name}/candles?resolution={resolution}&limit={limit}&start_time={start_time}&end_time={end_time}`
@@ -53,6 +44,15 @@ https://docs.ftx.com/#overview
 - [ ] `GET /account`
 - [ ] `GET /positions`
 - [ ] `POST /account/leverage`
+
+#### Subaccounts
+
+- [ ] `GET /subaccounts`
+- [ ] `POST /subaccounts`
+- [ ] `POST /subaccounts/update_name`
+- [ ] `DELETE /subaccounts`
+- [ ] `GET /subaccounts/{nickname}/balances`
+- [ ] `POST /subaccounts/transfer`
 
 #### Wallet
 

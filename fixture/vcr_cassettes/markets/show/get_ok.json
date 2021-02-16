@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/markets/BTC/USD?"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":{\"ask\":48120.0,\"baseCurrency\":\"BTC\",\"bid\":48110.0,\"change1h\":0.008827846508702034,\"change24h\":-0.0005608874485853173,\"changeBod\":0.004929503916449086,\"enabled\":true,\"highLeverageFeeExempt\":true,\"last\":48111.0,\"minProvideSize\":0.0001,\"name\":\"BTC/USD\",\"postOnly\":false,\"price\":48111.0,\"priceIncrement\":1.0,\"quoteCurrency\":\"USD\",\"quoteVolume24h\":182498291.0153,\"restricted\":false,\"sizeIncrement\":0.0001,\"type\":\"spot\",\"underlying\":null,\"volumeUsd24h\":182498291.0153},\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 16 Feb 2021 01:46:20 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d3e695c9960af08f5e65195c42fcc03c91613439980; expires=Thu, 18-Mar-21 01:46:20 GMT; path=/; domain=.ftx.com; HttpOnly; SameSite=Lax; Secure",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=0",
+        "ETag": "W/\"712fd507747a3b924a047db201b04768\"",
+        "CF-Cache-Status": "MISS",
+        "cf-request-id": "084a1d6ab70000dee9e1b82000000001",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "CF-RAY": "622398245f78dee9-SEA",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

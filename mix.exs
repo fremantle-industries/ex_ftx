@@ -5,7 +5,7 @@ defmodule ExFtx.MixProject do
     [
       app: :ex_ftx,
       version: "0.0.1",
-      elixir: "~> 1.7",
+      elixir: "~> 1.8",
       package: package(),
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -21,10 +21,16 @@ defmodule ExFtx.MixProject do
 
   defp deps do
     [
+      {:httpoison, "~> 1.0"},
+      {:jason, "~> 1.1"},
+      {:mapail, "~> 1.0.2"},
+      {:timex, "~> 3.5"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
-      {:ex_unit_notifier, "~> 1.0", only: :test}
+      {:exvcr, "~> 0.10", only: [:dev, :test]},
+      {:ex_unit_notifier, "~> 1.0", only: :test},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 

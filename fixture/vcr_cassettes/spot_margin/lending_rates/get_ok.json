@@ -1,0 +1,37 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json",
+        "FTX-KEY": "***",
+        "FTX-SIGN": "***",
+        "FTX-TS": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/spot_margin/borrow_rates"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":[{\"coin\":\"1INCH\",\"estimate\":2.7396e-05,\"previous\":2.7396e-05},{\"coin\":\"AAPL\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"AAVE\",\"estimate\":1.3704e-05,\"previous\":1.3704e-05},{\"coin\":\"ABNB\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"ACB\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"AMC\",\"estimate\":2.7396e-05,\"previous\":2.7396e-05},{\"coin\":\"AMD\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"AMZN\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"APHA\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"ARKK\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"AUD\",\"estimate\":1.368e-06,\"previous\":1.368e-06},{\"coin\":\"BABA\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BB\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BCH\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BILI\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BITW\",\"estimate\":6.8496e-05,\"previous\":6.8496e-05},{\"coin\":\"BNB\",\"estimate\":2.0544e-05,\"previous\":2.0544e-05},{\"coin\":\"BNTX\",\"estimate\":1.0956e-05,\"previous\":1.0956e-05},{\"coin\":\"BRL\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BTC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BTMX\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"BYND\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"CAD\",\"estimate\":2.6712e-05,\"previous\":2.6712e-05},{\"coin\":\"CBSE\",\"estimate\":5.0004e-05,\"previous\":5.0004e-05},{\"coin\":\"CEL\",\"estimate\":4.104e-06,\"previous\":4.104e-06},{\"coin\":\"CGC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"CRON\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"CUSDT\",\"estimate\":4.104e-06,\"previous\":4.104e-06},{\"coin\":\"DAI\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"DOGE\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"ETH\",\"estimate\":4.104e-06,\"previous\":4.104e-06},{\"coin\":\"ETHE\",\"estimate\":6.852e-06,\"previous\":6.852e-06},{\"coin\":\"EUR\",\"estimate\":2.7384e-05,\"previous\":2.7384e-05},{\"coin\":\"FB\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GBP\",\"estimate\":4.104e-06,\"previous\":4.104e-06},{\"coin\":\"GBTC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GDX\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GDXJ\",\"estimate\":1.368e-05,\"previous\":1.368e-05},{\"coin\":\"GLD\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GLXY\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GME\",\"estimate\":0.000272604,\"previous\":0.000272604},{\"coin\":\"GOOGL\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"GRT\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"HT\",\"estimate\":9.6e-06,\"previous\":1.1412e-05},{\"coin\":\"KNC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"LEO\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"LINK\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"LTC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"MATIC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"MKR\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"MOB\",\"estimate\":4.11e-05,\"previous\":8.22e-05},{\"coin\":\"MRNA\",\"estimate\":8.22e-06,\"previous\":8.22e-06},{\"coin\":\"MSTR\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"NFLX\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"NIO\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"NOK\",\"estimate\":2.0544e-05,\"previous\":2.0544e-05},{\"coin\":\"NVDA\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"OKB\",\"estimate\":6.78e-06,\"previous\":6.78e-06},{\"coin\":\"OMG\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"PAXG\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"PFE\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"PYPL\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"RSR\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"RUNE\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"SLV\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"SNX\",\"estimate\":1.368e-06,\"previous\":1.368e-06},{\"coin\":\"SPY\",\"estimate\":2.7396e-05,\"previous\":2.7396e-05},{\"coin\":\"SQ\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"SUSHI\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"SXP\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"TLRY\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"TOMO\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"TRX\",\"estimate\":4.794e-05,\"previous\":4.794e-05},{\"coin\":\"TRYB\",\"estimate\":3.8352e-05,\"previous\":3.8352e-05},{\"coin\":\"TSLA\",\"estimate\":1.0956e-05,\"previous\":1.0956e-05},{\"coin\":\"TSM\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"TWTR\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"UBER\",\"estimate\":2.7396e-05,\"previous\":2.7396e-05},{\"coin\":\"UNI\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"USD\",\"estimate\":8.208e-06,\"previous\":8.208e-06},{\"coin\":\"USDT\",\"estimate\":4.104e-06,\"previous\":6.708e-06},{\"coin\":\"USO\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"WBTC\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"XAUT\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"XRP\",\"estimate\":1.2e-06,\"previous\":1.2e-06},{\"coin\":\"YFI\",\"estimate\":1.0956e-05,\"previous\":1.0956e-05},{\"coin\":\"ZM\",\"estimate\":1.2e-06,\"previous\":1.2e-06}],\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 02 Mar 2021 03:55:34 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "private, max-age=0, no-cache",
+        "CF-Cache-Status": "MISS",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

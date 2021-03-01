@@ -3,23 +3,26 @@
     "request": {
       "body": "",
       "headers": {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "FTX-KEY": "***",
+        "FTX-SIGN": "***",
+        "FTX-TS": "***"
       },
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://ftx.com/api/markets/BTC/USD/orderbook?depth=10"
+      "url": "https://ftx.com/api/account"
     },
     "response": {
       "binary": false,
-      "body": "{\"result\":{\"asks\":[[49033.0,0.003],[49034.0,3.2957],[49035.0,0.051],[49041.0,0.3017],[49043.0,0.2311],[49046.0,0.0022],[49047.0,0.502],[49049.0,0.3003],[49050.0,0.153],[49051.0,0.1224]],\"bids\":[[49027.0,3.6433],[49025.0,0.0001],[49023.0,0.003],[49021.0,0.1223],[49016.0,0.2019],[49012.0,0.051],[49011.0,0.1224],[49007.0,0.0022],[49006.0,0.1224],[49005.0,0.1]]},\"success\":true}\n",
+      "body": "{\"error\":\"Not logged in\",\"success\":false}\n",
       "headers": {
-        "Date": "Tue, 02 Mar 2021 03:55:29 GMT",
+        "Date": "Tue, 02 Mar 2021 03:55:38 GMT",
         "Content-Type": "application/json",
-        "Transfer-Encoding": "chunked",
+        "Content-Length": "42",
         "Connection": "keep-alive",
-        "Vary": "Accept-Encoding",
-        "Cache-Control": "public, max-age=0",
+        "Cache-Control": "private, max-age=0, no-cache",
+        "Vary": "Origin",
         "CF-Cache-Status": "MISS",
         "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
@@ -27,7 +30,7 @@
         "Server": "cloudflare",
         "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
       },
-      "status_code": 200,
+      "status_code": 401,
       "type": "ok"
     }
   }

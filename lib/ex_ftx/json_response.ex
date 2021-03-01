@@ -1,7 +1,8 @@
 defmodule ExFtx.JsonResponse do
   alias __MODULE__
 
-  @type t :: %JsonResponse{success: boolean, result: map | list}
+  @type error :: String.t()
+  @type t :: %JsonResponse{success: boolean, result: map | list, error: error}
 
-  defstruct ~w[success result]a
+  defstruct ~w[success result error]a
 end

@@ -41,8 +41,8 @@ https://docs.ftx.com/#overview
 
 #### Account
 
-- [ ] `GET /account`
-- [ ] `GET /positions`
+- [x] `GET /account`
+- [x] `GET /positions`
 - [ ] `POST /account/leverage`
 
 #### Subaccounts
@@ -72,8 +72,6 @@ https://docs.ftx.com/#overview
 
 - [ ] `GET /orders?market={market}`
 - [ ] `GET /orders/history?market={market}`
-- [ ] `GET /orders?market={market}`
-- [ ] `GET /orders/history?market={market}`
 - [ ] `GET /conditional_orders?market={market}`
 - [ ] `GET /conditional_orders/{conditional_order_id}/triggers`
 - [ ] `GET /conditional_orders/history?market={market}`
@@ -97,11 +95,11 @@ https://docs.ftx.com/#overview
 
 #### Spot Margin
 
-- [ ] `GET /spot_margin/borrow_rates`
-- [ ] `GET /spot_margin/lending_rates`
-- [ ] `GET /spot_margin/borrow_summary`
+- [x] `GET /spot_margin/borrow_rates`
+- [x] `GET /spot_margin/lending_rates`
+- [x] `GET /spot_margin/borrow_summary`
 - [ ] `GET /spot_margin/market_info?market={market}`
-- [ ] `GET /spot_margin/borrow_history`
+- [x] `GET /spot_margin/borrow_history`
 - [ ] `GET /spot_margin/lending_history`
 - [ ] `GET /spot_margin/offers`
 - [ ] `GET /spot_margin/lending_info`

@@ -8,27 +8,23 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://ftx.com/api/futures/BTC-PERP?"
+      "url": "https://ftx.com/api/futures/BTC-PERP"
     },
     "response": {
       "binary": false,
-      "body": "{\"result\":{\"ask\":48182.0,\"bid\":48181.0,\"change1h\":0.008770644506311097,\"change24h\":0.000664451827242525,\"changeBod\":0.004313848077524226,\"description\":\"Bitcoin Perpetual Futures\",\"enabled\":true,\"expired\":false,\"expiry\":null,\"expiryDescription\":\"Perpetual\",\"group\":\"perpetual\",\"imfFactor\":0.002,\"index\":48131.945708316365,\"last\":48181.0,\"lowerBound\":45726.0,\"marginPrice\":48192.0,\"mark\":48192.0,\"moveStart\":null,\"name\":\"BTC-PERP\",\"perpetual\":true,\"positionLimitWeight\":1.0,\"postOnly\":false,\"priceIncrement\":1.0,\"sizeIncrement\":0.0001,\"type\":\"perpetual\",\"underlying\":\"BTC\",\"underlyingDescription\":\"Bitcoin\",\"upperBound\":50606.0,\"volume\":51741.6576,\"volumeUsd24h\":2465417796.2433},\"success\":true}\n",
+      "body": "{\"result\":{\"ask\":49130.0,\"bid\":49129.0,\"change1h\":-0.0067324410658687476,\"change24h\":0.055879129145264245,\"changeBod\":-0.01418653182438398,\"description\":\"Bitcoin Perpetual Futures\",\"enabled\":true,\"expired\":false,\"expiry\":null,\"expiryDescription\":\"Perpetual\",\"group\":\"perpetual\",\"imfFactor\":0.002,\"index\":49048.91869875273,\"last\":49129.0,\"lowerBound\":46597.0,\"marginPrice\":49129.0,\"mark\":49129.0,\"moveStart\":null,\"name\":\"BTC-PERP\",\"perpetual\":true,\"positionLimitWeight\":1.0,\"postOnly\":false,\"priceIncrement\":1.0,\"sizeIncrement\":0.0001,\"type\":\"perpetual\",\"underlying\":\"BTC\",\"underlyingDescription\":\"Bitcoin\",\"upperBound\":51579.0,\"volume\":76017.8416,\"volumeUsd24h\":3681863857.7999},\"success\":true}\n",
       "headers": {
-        "Date": "Tue, 16 Feb 2021 01:46:19 GMT",
+        "Date": "Tue, 02 Mar 2021 03:55:47 GMT",
         "Content-Type": "application/json",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=df163fce3fc41d3008442839a5d1b31511613439979; expires=Thu, 18-Mar-21 01:46:19 GMT; path=/; domain=.ftx.com; HttpOnly; SameSite=Lax; Secure",
         "Vary": "Accept-Encoding",
         "Cache-Control": "public, max-age=0",
-        "ETag": "W/\"a8c2c78aa2cadc4ed186f06f2e92360a\"",
         "CF-Cache-Status": "MISS",
-        "cf-request-id": "084a1d681a0000dee97a298000000001",
         "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
         "X-Content-Type-Options": "nosniff",
         "Server": "cloudflare",
-        "CF-RAY": "622398202830dee9-SEA",
         "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
       },
       "status_code": 200,

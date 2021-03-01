@@ -3,6 +3,7 @@ defmodule ExFtx.HTTPClient do
   @type params :: map
   @type path :: String.t()
   @type uri :: String.t()
+  @type credentials :: ExFtx.Credentials.t()
   @type non_auth_response :: term
   @type auth_response :: term
 
@@ -21,9 +22,32 @@ defmodule ExFtx.HTTPClient do
   @spec api_path :: String.t()
   def api_path, do: Application.get_env(:ex_ftx, :api_path, "/api")
 
+  @spec auth_get(path, credentials, params) :: auth_response
+  def auth_get(path, credentials, params) do
+    auth_request(:get, path |> to_uri(params), credentials)
+  end
+
   @spec non_auth_get(path, params) :: non_auth_response
   def non_auth_get(path, params \\ %{}) do
     non_auth_request(:get, path |> to_uri(params))
+  end
+
+  @spec auth_request(verb, uri, credentials) :: auth_response
+  def auth_request(verb, uri, credentials) do
+    body = ""
+
+    headers =
+      verb
+      |> auth_headers(uri, body, credentials)
+      |> put_content_type(:json)
+
+    %HTTPoison.Request{
+      method: verb,
+      url: url(uri),
+      headers: headers,
+      body: body
+    }
+    |> send
   end
 
   @spec non_auth_request(verb, uri) :: non_auth_response
@@ -44,6 +68,7 @@ defmodule ExFtx.HTTPClient do
       query: URI.encode_query(params)
     }
     |> URI.to_string()
+    |> String.trim("?")
   end
 
   defp put_content_type(headers, :json) do
@@ -56,7 +81,37 @@ defmodule ExFtx.HTTPClient do
     |> parse_response
   end
 
+  defp auth_headers(http_method, uri, request_body, credentials) do
+    normalized_http_method = http_method |> normalize_http_method
+    timestamp = ExFtx.Auth.timestamp()
+
+    signature =
+      ExFtx.Auth.sign(
+        credentials.api_secret,
+        timestamp,
+        normalized_http_method,
+        uri,
+        request_body
+      )
+
+    ["FTX-KEY": credentials.api_key, "FTX-SIGN": signature, "FTX-TS": timestamp]
+  end
+
+  defp normalize_http_method(:get), do: "GET"
+  defp normalize_http_method(:post), do: "POST"
+  defp normalize_http_method(:put), do: "PUT"
+  defp normalize_http_method(:delete), do: "DELETE"
+
   defp parse_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
+    {:ok, json} = Jason.decode(body)
+
+    {:ok, rpc_response} =
+      Mapail.map_to_struct(json, ExFtx.JsonResponse, transformations: [:snake_case])
+
+    {:ok, rpc_response}
+  end
+
+  defp parse_response({:ok, %HTTPoison.Response{status_code: 401, body: body}}) do
     {:ok, json} = Jason.decode(body)
 
     {:ok, rpc_response} =

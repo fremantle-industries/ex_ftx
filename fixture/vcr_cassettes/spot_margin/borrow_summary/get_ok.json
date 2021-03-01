@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json",
+        "FTX-KEY": "***",
+        "FTX-SIGN": "***",
+        "FTX-TS": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/spot_margin/borrow_summary"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":[{\"coin\":\"SUSHI-LP-WBTC-WETH\",\"size\":0.0},{\"coin\":\"GBTC\",\"size\":0.0100885475},{\"coin\":\"LEO\",\"size\":25078.668333876667},{\"coin\":\"ARKK\",\"size\":5.014657569583333},{\"coin\":\"PFE\",\"size\":0.0},{\"coin\":\"AMZN\",\"size\":0.0036806833333333333},{\"coin\":\"WBTC\",\"size\":5.531275284583334},{\"coin\":\"YFI\",\"size\":58.95657899583333},{\"coin\":\"SUSHI-LP-SUSHI-WETH\",\"size\":0.0},{\"coin\":\"SQ\",\"size\":0.0},{\"coin\":\"BITW\",\"size\":1070.3331707091668},{\"coin\":\"GBP\",\"size\":55369.83424043958},{\"coin\":\"SUSHI-LP-WETH-USDT\",\"size\":0.0},{\"coin\":\"KNC\",\"size\":4.2894167525},{\"coin\":\"GLD\",\"size\":0.0},{\"coin\":\"BRL\",\"size\":193836.43651600042},{\"coin\":\"SNX\",\"size\":26390.09656857},{\"coin\":\"SUSHI-LP-USDC-WETH\",\"size\":0.0},{\"coin\":\"APHA\",\"size\":0.0},{\"coin\":\"TSM\",\"size\":0.2083352875},{\"coin\":\"GOOGL\",\"size\":2.002e-05},{\"coin\":\"MATIC\",\"size\":30598.59790272375},{\"coin\":\"NFLX\",\"size\":0.0},{\"coin\":\"AAVE\",\"size\":4615.318545222916},{\"coin\":\"SXP\",\"size\":145513.3005539596},{\"coin\":\"TRYB\",\"size\":97378.47473359334},{\"coin\":\"GDXJ\",\"size\":0.0},{\"coin\":\"OMG\",\"size\":39.13162174666667},{\"coin\":\"AUD\",\"size\":539623.1843674079},{\"coin\":\"ABNB\",\"size\":0.025039548333333335},{\"coin\":\"USDT\",\"size\":62670003.87093825},{\"coin\":\"SPY\",\"size\":200.14007115916667},{\"coin\":\"CUSDT\",\"size\":203051.1382343179},{\"coin\":\"CBSE\",\"size\":1384.7479727245834},{\"coin\":\"SLV\",\"size\":99.18095050416666},{\"coin\":\"AMD\",\"size\":0.0},{\"coin\":\"CRON\",\"size\":0.0},{\"coin\":\"HT\",\"size\":9500.655535590833},{\"coin\":\"NIO\",\"size\":0.0},{\"coin\":\"GME\",\"size\":5092.344997797083},{\"coin\":\"DAI\",\"size\":100226.29792328709},{\"coin\":\"DOGE\",\"size\":6386476.568442488},{\"coin\":\"UNI-LP-WBTC-WETH\",\"size\":0.0},{\"coin\":\"TOMO\",\"size\":975.6433826845833},{\"coin\":\"OKB\",\"size\":7228.788481471666},{\"coin\":\"ACB\",\"size\":0.03502178},{\"coin\":\"UNI-LP-WETH-USDT\",\"size\":0.0},{\"coin\":\"NVDA\",\"size\":0.017500528333333334},{\"coin\":\"CAD\",\"size\":779.291349},{\"coin\":\"FB\",\"size\":0.0},{\"coin\":\"XRP\",\"size\":457365.2741388067},{\"coin\":\"UNI\",\"size\":16703.470093129585},{\"coin\":\"CGC\",\"size\":0.0},{\"coin\":\"MSTR\",\"size\":19.381553543333332},{\"coin\":\"RSR\",\"size\":368699.3146368825},{\"coin\":\"PAXG\",\"size\":0.266053415},{\"coin\":\"AAPL\",\"size\":5.15354996125},{\"coin\":\"MRNA\",\"size\":0.06501335625},{\"coin\":\"1INCH\",\"size\":426128.4188763208},{\"coin\":\"TLRY\",\"size\":1.9002163729166668},{\"coin\":\"GDX\",\"size\":0.0},{\"coin\":\"EUR\",\"size\":765753.3949721605},{\"coin\":\"BABA\",\"size\":18.301125466666665},{\"coin\":\"LINK\",\"size\":15260.798823417083},{\"coin\":\"USO\",\"size\":0.0},{\"coin\":\"TSLA\",\"size\":98.26211095166667},{\"coin\":\"LTC\",\"size\":1475.0074714254167},{\"coin\":\"MKR\",\"size\":0.04504377375},{\"coin\":\"PYPL\",\"size\":0.0},{\"coin\":\"TRX\",\"size\":2355603.471335295},{\"coin\":\"AMC\",\"size\":100.61895109583334},{\"coin\":\"UBER\",\"size\":28.441120567083335},{\"coin\":\"UNI-LP-DAI-WETH\",\"size\":0.0},{\"coin\":\"ETHE\",\"size\":67.82250578375},{\"coin\":\"BILI\",\"size\":0.050001503333333336},{\"coin\":\"GRT\",\"size\":63101.393774330834},{\"coin\":\"UNI-LP-USDC-WETH\",\"size\":0.0},{\"coin\":\"GLXY\",\"size\":1.50007043125},{\"coin\":\"BB\",\"size\":0.010184699166666667},{\"coin\":\"CEL\",\"size\":114577.79949772834},{\"coin\":\"BNTX\",\"size\":4.996112649583333},{\"coin\":\"BTMX\",\"size\":74935.91589823125},{\"coin\":\"SUSHI-LP-DAI-WETH\",\"size\":0.0},{\"coin\":\"BTC\",\"size\":173.33783981458333},{\"coin\":\"ZM\",\"size\":0.010000303333333333},{\"coin\":\"USD\",\"size\":235402052.88649282},{\"coin\":\"BCH\",\"size\":98.74487672375},{\"coin\":\"MOB\",\"size\":6940994.326476099},{\"coin\":\"SUSHI\",\"size\":40801.289427045},{\"coin\":\"NOK\",\"size\":1255.2372935866667},{\"coin\":\"BNB\",\"size\":20821.605354739168},{\"coin\":\"RUNE\",\"size\":43507.84886503041},{\"coin\":\"BYND\",\"size\":0.0},{\"coin\":\"TWTR\",\"size\":0.0},{\"coin\":\"XAUT\",\"size\":3.6536810566666666},{\"coin\":\"ETH\",\"size\":19359.305060761668}],\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 02 Mar 2021 16:47:22 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=10",
+        "CF-Cache-Status": "HIT",
+        "Age": "1",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

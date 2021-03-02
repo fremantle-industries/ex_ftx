@@ -107,7 +107,7 @@ https://docs.ftx.com/#overview
 
 #### Fills
 
-- [ ] `GET /fills?market={market}`
+- [x] `GET /fills?market={market}`
 
 #### Funding Payments
 

@@ -1,0 +1,37 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json",
+        "FTX-KEY": "***",
+        "FTX-SIGN": "***",
+        "FTX-TS": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/wallet/all_balances"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"result\":{\"Testing Account\":[],\"main\":[{\"availableWithoutBorrow\":0.0003692,\"coin\":\"BTC\",\"free\":0.00039039,\"spotBorrow\":0.0,\"total\":0.0003692,\"usdValue\":99.830976136359094},{\"availableWithoutBorrow\":0.0,\"coin\":\"USD\",\"free\":15.8281759,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":4.6585311e-09},{\"availableWithoutBorrow\":0.0,\"coin\":\"MATIC\",\"free\":72.54946942,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0},{\"availableWithoutBorrow\":0.0,\"coin\":\"RAY\",\"free\":0.0,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0},{\"availableWithoutBorrow\":0.0401215,\"coin\":\"FTT\",\"free\":0.0401215,\"spotBorrow\":0.0,\"total\":0.0401215,\"usdValue\":1.1850687455},{\"availableWithoutBorrow\":0.0,\"coin\":\"DOGE\",\"free\":334.91213337,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0},{\"availableWithoutBorrow\":0.0,\"coin\":\"USDT\",\"free\":16.80948443,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":9.621631686068613e-09},{\"availableWithoutBorrow\":0.0,\"coin\":\"AAVE\",\"free\":0.04230246,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0},{\"availableWithoutBorrow\":0.0,\"coin\":\"UNI\",\"free\":0.66107333,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0},{\"availableWithoutBorrow\":0.0,\"coin\":\"BADGER\",\"free\":0.0,\"spotBorrow\":0.0,\"total\":0.0,\"usdValue\":0.0}]},\"success\":true}\n",
+      "headers": {
+        "Date": "Tue, 02 Mar 2021 23:13:43 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "private, max-age=0, no-cache",
+        "CF-Cache-Status": "MISS",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

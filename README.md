@@ -63,7 +63,7 @@ https://docs.ftx.com/#overview
 - [ ] `GET /wallet/deposits`
 - [ ] `GET /wallet/withdrawals`
 - [ ] `POST /wallet/withdrawals`
-- [ ] `GET /wallet/airdrops`
+- [x] `GET /wallet/airdrops`
 - [ ] `GET /wallet/saved_addresses`
 - [ ] `POST /wallet/saved_addresses`
 - [ ] `DELETE /wallet/saved_addresses/{saved_address_id}`

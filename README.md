@@ -111,7 +111,7 @@ https://docs.ftx.com/#overview
 
 #### Funding Payments
 
-- [ ] `GET /funding_payments`
+- [x] `GET /funding_payments`
 
 #### Leveraged Tokens
 

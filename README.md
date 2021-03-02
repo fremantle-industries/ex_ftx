@@ -57,7 +57,7 @@ https://docs.ftx.com/#overview
 #### Wallet
 
 - [x] `GET /wallet/coins`
-- [ ] `GET /wallet/balances`
+- [x] `GET /wallet/balances`
 - [ ] `GET /wallet/all_balances`
 - [ ] `GET /wallet/deposit_address/{coin}?method={method}`
 - [ ] `GET /wallet/deposits`

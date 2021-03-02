@@ -2,7 +2,8 @@ defmodule ExFtx.Account.Show do
   alias ExFtx.JsonResponse
 
   @type credentials :: ExFtx.Credentials.t()
-  @type result :: {:ok, term} | {:error, JsonResponse.error(), :parse_result_item}
+  @type account :: ExFtx.Account.t()
+  @type result :: {:ok, account} | {:error, JsonResponse.error(), :parse_result_item}
 
   @spec get(credentials) :: result
   def get(credentials) do

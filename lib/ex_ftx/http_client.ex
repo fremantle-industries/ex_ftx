@@ -102,16 +102,8 @@ defmodule ExFtx.HTTPClient do
   defp normalize_http_method(:put), do: "PUT"
   defp normalize_http_method(:delete), do: "DELETE"
 
-  defp parse_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
-    {:ok, json} = Jason.decode(body)
-
-    {:ok, rpc_response} =
-      Mapail.map_to_struct(json, ExFtx.JsonResponse, transformations: [:snake_case])
-
-    {:ok, rpc_response}
-  end
-
-  defp parse_response({:ok, %HTTPoison.Response{status_code: 401, body: body}}) do
+  defp parse_response({:ok, %HTTPoison.Response{status_code: status_code, body: body}})
+       when status_code >= 200 and status_code < 500 do
     {:ok, json} = Jason.decode(body)
 
     {:ok, rpc_response} =

@@ -102,7 +102,7 @@ https://docs.ftx.com/#overview
 - [x] `GET /spot_margin/borrow_history`
 - [x] `GET /spot_margin/lending_history`
 - [x] `GET /spot_margin/offers`
-- [ ] `GET /spot_margin/lending_info`
+- [x] `GET /spot_margin/lending_info`
 - [ ] `POST /spot_margin/offers`
 
 #### Fills

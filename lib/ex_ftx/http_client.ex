@@ -51,6 +51,13 @@ defmodule ExFtx.HTTPClient do
     auth_request(:post, uri, credentials, body)
   end
 
+  @spec auth_delete(path, credentials, params) :: auth_response
+  def auth_delete(path, credentials, params \\ %{}) do
+    uri = path |> to_uri(%{})
+    body = Jason.encode!(params)
+    auth_request(:delete, uri, credentials, body)
+  end
+
   @spec auth_request(verb, uri, credentials, term) :: auth_response
   def auth_request(verb, uri, credentials, body) do
     headers =

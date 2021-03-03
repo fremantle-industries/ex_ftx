@@ -11,8 +11,7 @@ config :exvcr,
     "FTX-TS"
   ],
   filter_sensitive_data: [
-    [pattern: "username\":\"[a-zA-Z0-9@.]+\"", placeholder: "username\":\"***\""],
-    [pattern: "id\":[0-9]+", placeholder: "id\":123"]
+    [pattern: "username\":\"[a-zA-Z0-9@.]+\"", placeholder: "username\":\"***\""]
   ],
   response_headers_blacklist: [
     "Set-Cookie",

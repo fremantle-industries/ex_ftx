@@ -77,7 +77,7 @@ https://docs.ftx.com/#overview
 - [ ] `GET /conditional_orders/history?market={market}`
 - [x] `POST /orders`
 - [ ] `POST /conditional_orders`
-- [ ] `POST /orders/{order_id}/modify`
+- [x] `POST /orders/{order_id}/modify`
 - [ ] `POST /orders/by_client_id/{client_order_id}/modify`
 - [ ] `POST /conditional_orders/{order_id}/modify`
 - [ ] `GET /orders/{order_id}`

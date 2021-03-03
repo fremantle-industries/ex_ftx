@@ -1,11 +1,12 @@
 defmodule ExFtx.Order do
   alias __MODULE__
 
+  @type id :: pos_integer
   @type t :: %Order{
           created_at: String.t(),
           filled_size: number,
           future: String.t(),
-          id: pos_integer,
+          id: id,
           market: ExFtx.Market.name(),
           price: number,
           remaining_size: number,

@@ -83,7 +83,7 @@ https://docs.ftx.com/#overview
 - [ ] `GET /orders/{order_id}`
 - [ ] `GET /orders/by_client_id/{client_order_id}`
 - [x] `DELETE /orders/{order_id}`
-- [ ] `DELETE /orders/by_client_id/{client_order_id}`
+- [x] `DELETE /orders/by_client_id/{client_order_id}`
 - [ ] `DELETE /conditional_orders/{id}`
 - [ ] `DELETE /orders`
 

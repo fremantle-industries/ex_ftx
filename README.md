@@ -85,7 +85,7 @@ https://docs.ftx.com/#overview
 - [x] `DELETE /orders/{order_id}`
 - [x] `DELETE /orders/by_client_id/{client_order_id}`
 - [ ] `DELETE /conditional_orders/{id}`
-- [ ] `DELETE /orders`
+- [x] `DELETE /orders`
 
 #### Convert
 

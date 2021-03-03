@@ -1,8 +1,9 @@
 defmodule ExFtx.Market do
   alias __MODULE__
 
+  @type name :: String.t()
   @type t :: %Market{
-          name: String.t(),
+          name: name,
           base_currency: String.t() | nil,
           quote_currency: String.t() | nil,
           type: String.t(),

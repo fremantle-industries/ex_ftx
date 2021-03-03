@@ -78,7 +78,7 @@ https://docs.ftx.com/#overview
 - [x] `POST /orders`
 - [ ] `POST /conditional_orders`
 - [x] `POST /orders/{order_id}/modify`
-- [ ] `POST /orders/by_client_id/{client_order_id}/modify`
+- [x] `POST /orders/by_client_id/{client_order_id}/modify`
 - [ ] `POST /conditional_orders/{order_id}/modify`
 - [ ] `GET /orders/{order_id}`
 - [ ] `GET /orders/by_client_id/{client_order_id}`

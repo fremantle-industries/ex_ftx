@@ -15,7 +15,7 @@ defmodule ExFtx.MixProject do
 
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger, :crypto]
     ]
   end
 
@@ -31,7 +31,8 @@ defmodule ExFtx.MixProject do
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
       {:exvcr, "~> 0.10", only: [:dev, :test]},
       {:ex_unit_notifier, "~> 1.0", only: :test},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+      {:uuid, "~> 1.1", only: :test}
     ]
   end
 

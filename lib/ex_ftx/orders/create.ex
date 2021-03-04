@@ -4,7 +4,7 @@ defmodule ExFtx.Orders.Create do
   @type credentials :: ExFtx.Credentials.t()
   @type order_payload :: ExFtx.OrderPayload.t()
   @type order :: ExFtx.Order.t()
-  @type result :: {:ok, [order]} | {:error, :parse_result_item}
+  @type result :: {:ok, order} | {:error, :parse_result_item}
 
   @spec post(credentials, order_payload) :: result
   def post(credentials, order_payload) do

@@ -3,8 +3,8 @@ defmodule ExFtx.Futures.FundingRates do
   @type funding_rates :: ExFtx.FundingRates.t()
   @type result :: {:ok, funding_rates} | {:error, :parse_result_item}
 
-  @spec get() :: result
-  def get() do
+  @spec get :: result
+  def get do
     "/funding_rates"
     |> ExFtx.HTTPClient.non_auth_get(%{})
     |> parse_response()

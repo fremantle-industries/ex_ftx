@@ -1,7 +1,7 @@
 defmodule ExFtx.Futures.FundingRates do
   @type future_name :: String.t()
-  @type funding_rates :: ExFtx.FundingRates.t()
-  @type result :: {:ok, funding_rates} | {:error, :parse_result_item}
+  @type funding_rate :: ExFtx.FundingRate.t()
+  @type result :: {:ok, [funding_rate]} | {:error, :parse_result_item}
 
   @spec get :: result
   def get do
@@ -12,7 +12,7 @@ defmodule ExFtx.Futures.FundingRates do
 
   defp parse_response({:ok, %ExFtx.JsonResponse{success: true, result: funding_rates}}) do
     funding_rates
-    |> Enum.map(&Mapail.map_to_struct(&1, ExFtx.FundingRates))
+    |> Enum.map(&Mapail.map_to_struct(&1, ExFtx.FundingRate))
     |> Enum.reduce(
       {:ok, []},
       fn

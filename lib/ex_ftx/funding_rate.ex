@@ -1,7 +1,7 @@
-defmodule ExFtx.FundingRates do
+defmodule ExFtx.FundingRate do
   alias __MODULE__
 
-  @type t :: %FundingRates{
+  @type t :: %FundingRate{
           future: String.t(),
           rate: number,
           time: String.t()

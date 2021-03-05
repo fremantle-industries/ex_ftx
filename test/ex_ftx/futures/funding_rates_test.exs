@@ -12,7 +12,7 @@ defmodule ExFtx.Futures.FundingRatesTest do
     use_cassette "futures/funding_rates/get_ok" do
       assert {:ok, funding_rates} = ExFtx.Futures.FundingRates.get()
       assert Enum.count(funding_rates) > 0
-      assert %ExFtx.FundingRates{} = funding_rate = Enum.at(funding_rates, 0)
+      assert %ExFtx.FundingRate{} = funding_rate = Enum.at(funding_rates, 0)
       assert funding_rate.future != nil
     end
   end

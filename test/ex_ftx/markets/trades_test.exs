@@ -21,4 +21,12 @@ defmodule ExFtx.Markets.TradesTest do
       assert {:error, :not_found} = ExFtx.Markets.Trades.get("INVALID/MARKET")
     end
   end
+
+  test ".get/2 with limit" do
+    use_cassette "markets/trades/get_with_limit_ok" do
+      assert {:ok, trades} = ExFtx.Markets.Trades.get("BTC/USD", %{limit: 50})
+      assert Enum.count(trades) == 50
+      assert Enum.at(trades, 0).price > 0
+    end
+  end
 end

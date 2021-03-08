@@ -1,12 +1,12 @@
 defmodule ExFtx.Markets.Trades do
   @type market_name :: String.t()
-  @type order_book :: ExFtx.Trade.t()
+  @type trade :: ExFtx.Trade.t()
   @type params :: %{
           optional(:limit) => pos_integer,
           optional(:start_time) => pos_integer,
           optional(:end_time) => pos_integer
         }
-  @type result :: {:ok, order_book} | {:error, :not_found | :parse_result_item | String.t()}
+  @type result :: {:ok, trade} | {:error, :not_found | :parse_result_item | String.t()}
 
   @spec get(market_name) :: result
   @spec get(market_name, params) :: result

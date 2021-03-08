@@ -15,4 +15,10 @@ defmodule ExFtx.Futures.StatsTest do
       assert stats.open_interest != nil
     end
   end
+
+  test ".get/1 error future not found" do
+    use_cassette "futures/stats/get_error_future_not_found" do
+      assert ExFtx.Futures.Stats.get("INVALID-FUTURE") == {:error, :not_found}
+    end
+  end
 end

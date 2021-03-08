@@ -1,59 +1,57 @@
-defmodule ExFtx.Future do
+defmodule ExFtx.ExpiredFuture do
   alias __MODULE__
 
-  @type t :: %Future{
+  @type t :: %ExpiredFuture{
           ask: number,
           bid: number,
-          change_1h: number,
-          change_24h: number,
-          change_bod: number,
-          volume_usd_24h: number,
-          volume: number,
           description: String.t(),
           enabled: boolean,
           expired: boolean,
           expiry: String.t(),
-          index: number,
+          expiry_description: String.t(),
+          group: String.t(),
           imf_factor: number,
+          index: number,
           last: number,
           lower_bound: number,
+          margin_price: number,
           mark: number,
+          move_start: term,
           name: String.t(),
           perpetual: boolean,
           position_limit_weight: number,
           post_only: boolean,
           price_increment: number,
           size_increment: number,
+          type: String.t(),
           underlying: String.t(),
-          upper_bound: number,
-          type: String.t()
+          upper_bound: number
         }
 
   defstruct ~w[
     ask
     bid
-    change_1h
-    change_24h
-    change_bod
-    volume_usd_24h
-    volume
     description
     enabled
     expired
     expiry
-    index
+    expiry_description
+    group
     imf_factor
+    index
     last
     lower_bound
+    margin_price
     mark
+    move_start
     name
     perpetual
     position_limit_weight
     post_only
     price_increment
     size_increment
+    type
     underlying
     upper_bound
-    type
   ]a
 end

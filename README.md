@@ -36,7 +36,7 @@ https://docs.ftx.com/#overview
 - [x] `GET /futures/{future_name}/stats`
 - [x] `GET /funding_rates`
 - [ ] `GET /indexes/{index_name}/weights`
-- [ ] `GET /expired_futures`
+- [x] `GET /expired_futures`
 - [ ] `GET /indexes/{market_name}/candles?resolution={resolution}&limit={limit}&start_time={start_time}&end_time={end_time}`
 
 #### Account

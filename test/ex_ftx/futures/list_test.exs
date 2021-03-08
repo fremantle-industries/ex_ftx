@@ -8,7 +8,7 @@ defmodule ExFtx.Futures.ListTest do
     :ok
   end
 
-  test ".get/1" do
+  test ".get/0" do
     use_cassette "futures/list/get_ok" do
       assert {:ok, futures} = ExFtx.Futures.List.get()
       assert Enum.count(futures) != 0

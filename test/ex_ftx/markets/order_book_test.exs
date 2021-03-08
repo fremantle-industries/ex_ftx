@@ -17,7 +17,13 @@ defmodule ExFtx.Markets.OrderBookTest do
     end
   end
 
-  test ".get/1 with depth" do
+  test ".get/1 error market not found" do
+    use_cassette "markets/order_book/get_error_market_not_found" do
+      assert {:error, :not_found} = ExFtx.Markets.OrderBook.get("INVALID/MARKET")
+    end
+  end
+
+  test ".get/2 with depth" do
     use_cassette "markets/order_book/get_with_depth_ok" do
       assert {:ok, order_book} = ExFtx.Markets.OrderBook.get("BTC/USD", %{depth: 10})
       assert %ExFtx.OrderBook{} = order_book

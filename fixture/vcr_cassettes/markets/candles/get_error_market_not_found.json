@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/markets/INVALID/MARKET/candles?resolution=60"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"error\":\"No such market: INVALID/MARKET \",\"success\":false}\n",
+      "headers": {
+        "Date": "Mon, 08 Mar 2021 21:52:08 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "public, max-age=60",
+        "CF-Cache-Status": "MISS",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "alt-svc": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      },
+      "status_code": 404,
+      "type": "ok"
+    }
+  }
+]

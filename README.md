@@ -27,7 +27,7 @@ https://docs.ftx.com/#overview
 - [x] `GET /markets/{market_name}`
 - [x] `GET /markets/{market_name}/orderbook?depth={depth}`
 - [x] `GET /markets/{market_name}/trades?limit={limit}&start_time={start_time}&end_time={end_time}`
-- [ ] `GET /markets/{market_name}/candles?resolution={resolution}&limit={limit}&start_time={start_time}&end_time={end_time}`
+- [x] `GET /markets/{market_name}/candles?resolution={resolution}&limit={limit}&start_time={start_time}&end_time={end_time}`
 
 #### Futures
 

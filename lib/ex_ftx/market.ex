@@ -15,7 +15,15 @@ defmodule ExFtx.Market do
           post_only: boolean,
           price_increment: number,
           size_increment: number,
-          restricted: boolean
+          min_provide_size: number,
+          restricted: boolean,
+          high_leverage_fee_exempt: boolean,
+          change_1h: number,
+          change_24h: number,
+          change_bod: number,
+          price: number,
+          quote_volume_24h: number,
+          volume_usd_24h: number
         }
 
   defstruct ~w[
@@ -31,6 +39,14 @@ defmodule ExFtx.Market do
     post_only
     price_increment
     size_increment
+    min_provide_size
     restricted
+    high_leverage_fee_exempt
+    change_1h
+    change_24h
+    change_bod
+    price
+    quote_volume_24h
+    volume_usd_24h
   ]a
 end

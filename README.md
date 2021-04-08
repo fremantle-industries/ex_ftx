@@ -95,6 +95,7 @@ https://docs.ftx.com/#overview
 
 #### Spot Margin
 
+- [x] `GET /spot_margin/history`
 - [x] `GET /spot_margin/borrow_rates`
 - [x] `GET /spot_margin/lending_rates`
 - [x] `GET /spot_margin/borrow_summary`

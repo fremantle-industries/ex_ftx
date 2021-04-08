@@ -1,14 +1,19 @@
 defmodule ExFtx.SpotMargin.LendingHistory do
+  @moduledoc """
+  Get lending history
+
+  https://docs.ftx.com/#get-lending-history
+  """
+
   alias ExFtx.JsonResponse
 
-  @type credentials :: ExFtx.Credentials.t()
-  @type borrow_rate :: ExFtx.LendingHistory.t()
-  @type result :: {:ok, [borrow_rate]} | {:error, :parse_result_item}
+  @type lending_history :: ExFtx.LendingHistory.t()
+  @type result :: {:ok, [lending_history]} | {:error, :parse_result_item}
 
-  @spec get(credentials) :: result
-  def get(credentials) do
-    "/spot_margin/lending_history"
-    |> ExFtx.HTTPClient.auth_get(credentials, %{})
+  @spec get :: result
+  def get do
+    "/spot_margin/history"
+    |> ExFtx.HTTPClient.non_auth_get(%{})
     |> parse_response()
   end
 

@@ -1,8 +1,9 @@
-defmodule ExFtx.LendingHistory do
+defmodule ExFtx.MyLendingHistory do
   alias __MODULE__
 
-  @type t :: %LendingHistory{
+  @type t :: %MyLendingHistory{
           coin: String.t(),
+          cost: number,
           rate: number,
           size: number,
           time: String.t()
@@ -10,6 +11,7 @@ defmodule ExFtx.LendingHistory do
 
   defstruct ~w[
     coin
+    cost
     rate
     size
     time

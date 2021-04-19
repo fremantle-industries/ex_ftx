@@ -4,7 +4,7 @@ defmodule ExFtx.MixProject do
   def project do
     [
       app: :ex_ftx,
-      version: "0.0.7",
+      version: "0.0.8",
       elixir: "~> 1.8",
       package: package(),
       start_permanent: Mix.env() == :prod,

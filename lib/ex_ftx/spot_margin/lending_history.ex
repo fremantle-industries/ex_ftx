@@ -8,12 +8,13 @@ defmodule ExFtx.SpotMargin.LendingHistory do
   alias ExFtx.JsonResponse
 
   @type lending_history :: ExFtx.LendingHistory.t()
+  @type params :: %{optional(:coin) => String.t()}
   @type result :: {:ok, [lending_history]} | {:error, :parse_result_item}
 
-  @spec get :: result
-  def get do
+  @spec get(params) :: result
+  def get(params \\ %{}) do
     "/spot_margin/history"
-    |> ExFtx.HTTPClient.non_auth_get(%{})
+    |> ExFtx.HTTPClient.non_auth_get(params)
     |> parse_response()
   end
 

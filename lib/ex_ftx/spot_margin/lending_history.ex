@@ -8,7 +8,11 @@ defmodule ExFtx.SpotMargin.LendingHistory do
   alias ExFtx.JsonResponse
 
   @type lending_history :: ExFtx.LendingHistory.t()
-  @type params :: %{optional(:coin) => String.t()}
+  @type params :: %{
+          optional(:coin) => String.t(),
+          optional(:start_time) => non_neg_integer,
+          optional(:end_time) => non_neg_integer
+        }
   @type result :: {:ok, [lending_history]} | {:error, :parse_result_item}
 
   @spec get(params) :: result

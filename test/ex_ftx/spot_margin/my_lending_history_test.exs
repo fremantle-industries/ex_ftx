@@ -17,7 +17,7 @@ defmodule ExFtx.SpotMargin.MyLendingHistoryTest do
     api_secret: "invalid"
   }
 
-  test ".get/1 ok" do
+  test ".get/1 ok returns the latest rates for all coins" do
     use_cassette "spot_margin/my_lending_history/get_ok" do
       assert {:ok, my_lending_history} = ExFtx.SpotMargin.MyLendingHistory.get(@valid_credentials)
       assert Enum.count(my_lending_history) > 0

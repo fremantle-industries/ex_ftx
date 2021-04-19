@@ -1,14 +1,13 @@
 defmodule ExFtx.SpotMargin.LendingRates do
   alias ExFtx.JsonResponse
 
-  @type credentials :: ExFtx.Credentials.t()
   @type lending_rate :: ExFtx.LendingRate.t()
   @type result :: {:ok, [lending_rate]} | {:error, :parse_result_item}
 
-  @spec get(credentials) :: result
-  def get(credentials) do
-    "/spot_margin/borrow_rates"
-    |> ExFtx.HTTPClient.auth_get(credentials, %{})
+  @spec get :: result
+  def get() do
+    "/spot_margin/lending_rates"
+    |> ExFtx.HTTPClient.non_auth_get(%{})
     |> parse_response()
   end
 

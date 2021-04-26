@@ -1,5 +1,4 @@
 # ExFtx
-
 [![Build Status](https://github.com/fremantle-capital/ex_ftx/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-capital/ex_ftx/actions?query=workflow%3Atest)
 [![hex.pm version](https://img.shields.io/hexpm/v/ex_ftx.svg?style=flat)](https://hex.pm/packages/ex_ftx)
 
@@ -160,4 +159,4 @@ https://docs.ftx.com/#overview
 
 ## License
 
-`ex_ftx` is released under the [MIT license](./LICENSE.md)
+`ex_ftx` is released under the [MIT license](./LICENSE)

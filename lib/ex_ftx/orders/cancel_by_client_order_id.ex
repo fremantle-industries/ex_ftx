@@ -2,7 +2,7 @@ defmodule ExFtx.Orders.CancelByClientOrderId do
   alias ExFtx.JsonResponse
 
   @type credentials :: ExFtx.Credentials.t()
-  @type result :: :ok | {:error, :unhandled_result}
+  @type result :: :ok | {:error, :unhandled_result | String.t()}
 
   @spec delete(credentials, ExFtx.OrderPayload.client_id()) :: result
   def delete(credentials, client_order_id) do

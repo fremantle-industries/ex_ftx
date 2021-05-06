@@ -12,28 +12,28 @@ jobs:
 
     strategy:
       matrix:
-        otp: [22.x, 23.x]
+        otp: [21.x, 22.x, 23.x]
         elixir: [1.10.x, 1.11.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
-      - uses: actions/setup-elixir@v1.5
+      - uses: erlef/setup-elixir@v1.7
         with:
           otp-version: ${{matrix.otp}}
           elixir-version: ${{matrix.elixir}}
 
-      - name: Cache Elixir Build & Dependencies
+      - name: Cache Elixir
         uses: actions/cache@v2
         with:
           path: |
             deps
             _build/dev
             _build/test
-          key: cache-elixir-${{secrets.CACHE_VERSION}}-${{runner.os}}-${{hashFiles('mix.lock')}}-${{github.ref}}
+          key: elixir-cache-${{secrets.CACHE_VERSION}}-${{matrix.elixir}}-otp-${{matrix.otp}}-${{runner.os}}-${{hashFiles('mix.lock')}}-${{github.ref}}
           restore-keys: |
-            cache-elixir-${{secrets.CACHE_VERSION}}-${{runner.os}}-${{hashFiles('mix.lock')}}-
-            cache-elixir-${{secrets.CACHE_VERSION}}-${{runner.os}}-
+            elixir-cache-${{secrets.CACHE_VERSION}}-${{matrix.elixir}}-otp-${{matrix.otp}}-${{runner.os}}-${{hashFiles('mix.lock')}}-
+            elixir-cache-${{secrets.CACHE_VERSION}}-${{matrix.elixir}}-otp-${{matrix.otp}}-${{runner.os}}-
 
       - name: Install Dependencies
         run: mix deps.get
@@ -42,4 +42,6 @@ jobs:
         env:
           MIX_ENV: test
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          FTX_API_KEY: ${{secrets.FTX_API_KEY}}
+          FTX_API_SECRET: ${{secrets.FTX_API_SECRET}}
         run: mix coveralls.github

@@ -9,7 +9,8 @@ defmodule ExFtx.MixProject do
       package: package(),
       start_permanent: Mix.env() == :prod,
       description: description(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 

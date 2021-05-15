@@ -14,6 +14,11 @@ def deps do
 end
 ```
 
+## Requirements
+
+- Erlang 22+
+- Elixir 1.10+
+
 ## API Documentation
 
 https://docs.ftx.com/#overview

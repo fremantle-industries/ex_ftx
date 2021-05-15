@@ -8,8 +8,8 @@ defmodule ExFtx.Auth do
   def sign(api_secret, ts, verb, encoded_path, data) do
     payload = "#{ts}#{verb}#{encoded_path}#{data}"
 
-    :sha256
-    |> :crypto.hmac(api_secret, payload)
+    :hmac
+    |> :crypto.mac(:sha256, api_secret, payload)
     |> Base.encode16(case: :lower)
   end
 end

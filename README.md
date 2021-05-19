@@ -10,7 +10,9 @@ Add the `ex_ftx` package to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:ex_ftx, "~> 0.0.10"}]
+  [
+    {:ex_ftx, "~> 0.0.11"}
+  ]
 end
 ```
 

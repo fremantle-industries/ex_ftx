@@ -2,7 +2,7 @@ defmodule ExFtx.Orders.CancelAll do
   alias ExFtx.JsonResponse
 
   @type credentials :: ExFtx.Credentials.t()
-  @type result :: :ok | {:error, :unhandled_result}
+  @type result :: :ok | {:error, String.t() | :unhandled_result}
 
   @spec delete(credentials) :: result
   def delete(credentials) do

@@ -4,7 +4,7 @@ defmodule ExFtx.Orders.ModifyByOrderId do
   @type credentials :: ExFtx.Credentials.t()
   @type modify_order_payload :: ExFtx.ModifyOrderPayload.t()
   @type order :: ExFtx.Order.t()
-  @type result :: {:ok, order} | {:error, :parse_result_item}
+  @type result :: {:ok, order} | {:error, String.t() | :parse_result_item}
 
   @spec post(credentials, ExFtx.Order.id(), modify_order_payload) :: result
   def post(credentials, order_id, modify_order_payload) do

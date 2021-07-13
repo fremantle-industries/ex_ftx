@@ -41,6 +41,17 @@ defmodule ExFtx.HTTPClient do
   end
 
   @spec auth_get(path, credentials, params) :: auth_response
+  @spec auth_get(
+          binary,
+          atom
+          | %{
+              :api_key => any,
+              :api_secret => binary,
+              :subaccount => nil | binary,
+              optional(any) => any
+            },
+          any
+        ) :: {:ok, struct}
   def auth_get(path, credentials, params) do
     auth_request(:get, path |> to_uri(params), credentials, "")
   end
@@ -64,6 +75,7 @@ defmodule ExFtx.HTTPClient do
     headers =
       verb
       |> auth_headers(uri, body, credentials)
+      |> put_subaccount(credentials.api_subaccount)
       |> put_content_type(:json)
 
     %HTTPoison.Request{
@@ -86,6 +98,16 @@ defmodule ExFtx.HTTPClient do
 
   defp put_content_type(headers, :json) do
     Keyword.put(headers, :"Content-Type", "application/json")
+  end
+
+  defp put_subaccount(_headers, nil) do
+  end
+
+  defp put_subaccount(_headers, "") do
+  end
+
+  defp put_subaccount(headers, subaccount) do
+    Keyword.put(headers, :"FTX-SUBACCOUNT", URI.encode(subaccount))
   end
 
   defp send(request) do

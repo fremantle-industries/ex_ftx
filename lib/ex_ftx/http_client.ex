@@ -114,8 +114,7 @@ defmodule ExFtx.HTTPClient do
   defp normalize_http_method(:put), do: "PUT"
   defp normalize_http_method(:delete), do: "DELETE"
 
-  defp parse_response({:ok, %HTTPoison.Response{status_code: status_code, body: body}})
-       when status_code >= 200 and status_code < 500 do
+  defp parse_response({:ok, %HTTPoison.Response{body: body}}) do
     {:ok, json} = Jason.decode(body)
 
     {:ok, rpc_response} =

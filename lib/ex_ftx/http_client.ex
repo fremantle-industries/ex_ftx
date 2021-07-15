@@ -4,8 +4,9 @@ defmodule ExFtx.HTTPClient do
   @type path :: String.t()
   @type uri :: String.t()
   @type credentials :: ExFtx.Credentials.t()
-  @type non_auth_response :: term
-  @type auth_response :: term
+  @type error_reason :: Maptu.Extension.non_strict_error_reason() | HTTPoison.Error.t()
+  @type non_auth_response :: {:ok, ExFtx.JsonResponse.t()} | {:error, error_reason}
+  @type auth_response :: {:ok, ExFtx.JsonResponse.t()} | {:error, error_reason}
 
   @spec domain :: String.t()
   def domain, do: Application.get_env(:ex_ftx, :domain, "ftx.com")
@@ -116,10 +117,10 @@ defmodule ExFtx.HTTPClient do
 
   defp parse_response({:ok, %HTTPoison.Response{body: body}}) do
     {:ok, json} = Jason.decode(body)
+    Mapail.map_to_struct(json, ExFtx.JsonResponse, transformations: [:snake_case])
+  end
 
-    {:ok, rpc_response} =
-      Mapail.map_to_struct(json, ExFtx.JsonResponse, transformations: [:snake_case])
-
-    {:ok, rpc_response}
+  defp parse_response({:error, _} = result) do
+    result
   end
 end

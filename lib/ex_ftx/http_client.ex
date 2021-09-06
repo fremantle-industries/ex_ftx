@@ -100,11 +100,9 @@ defmodule ExFtx.HTTPClient do
     Keyword.put(headers, :"Content-Type", "application/json")
   end
 
-  defp put_subaccount(_headers, nil) do
-  end
+  defp put_subaccount(headers, nil), do: headers
 
-  defp put_subaccount(_headers, "") do
-  end
+  defp put_subaccount(headers, ""), do: headers
 
   defp put_subaccount(headers, subaccount) do
     Keyword.put(headers, :"FTX-SUBACCOUNT", URI.encode(subaccount))

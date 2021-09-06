@@ -8,6 +8,6 @@ defmodule ExFtx.Credentials do
           api_subaccount: api_subaccount
         }
 
-  @enforce_keys ~w[api_key api_secret api_subaccount]a
+  @enforce_keys ~w[api_key api_secret]a
   defstruct ~w[api_key api_secret api_subaccount]a
 end

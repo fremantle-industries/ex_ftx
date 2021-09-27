@@ -3,7 +3,7 @@ defmodule ExFtx.SpotMargin.Create do
 
   @type credentials :: ExFtx.Credentials.t()
   @type lending_payload :: ExFtx.LendingPayload.t()
-  @type result :: :ok | {:error, String.t() | :parse_result_item}
+  @type result :: :ok | {:error, String.t()}
 
   @spec post(credentials, lending_payload) :: result
   def post(credentials, lending_payload) do
@@ -18,6 +18,6 @@ defmodule ExFtx.SpotMargin.Create do
     |> ProperCase.to_camel_case()
   end
 
-  defp parse_response({:ok, %JsonResponse{success: true, result: nil}}), do: :ok
+  defp parse_response({:ok, %JsonResponse{success: true, result: _ignored}}), do: :ok
   defp parse_response({:ok, %JsonResponse{success: false, error: error}}), do: {:error, error}
 end

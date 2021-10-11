@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json",
+        "FTX-KEY": "***",
+        "FTX-SIGN": "***",
+        "FTX-TS": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://ftx.com/api/orders"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"success\":true,\"result\":[{\"id\":86960625366,\"clientId\":null,\"market\":\"SOL/USDT\",\"type\":\"limit\",\"side\":\"buy\",\"price\":130.0,\"size\":0.76,\"status\":\"open\",\"filledSize\":0.0,\"remainingSize\":0.76,\"reduceOnly\":false,\"liquidation\":false,\"avgFillPrice\":null,\"postOnly\":false,\"ioc\":false,\"createdAt\":\"2021-10-11T21:22:50.978018+00:00\",\"future\":null}]}\n",
+      "headers": {
+        "Date": "Mon, 11 Oct 2021 22:08:01 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "private, max-age=0, no-cache",
+        "X-Cache-Status": "MISS",
+        "CF-Cache-Status": "MISS",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-27=\":443\"; ma=86400"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -76,6 +76,7 @@ https://docs.ftx.com/#overview
 
 #### Orders
 
+- [x] `GET /orders`
 - [ ] `GET /orders?market={market}`
 - [ ] `GET /orders/history?market={market}`
 - [ ] `GET /conditional_orders?market={market}`

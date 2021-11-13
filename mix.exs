@@ -45,7 +45,7 @@ defmodule ExFtx.MixProject do
     %{
       licenses: ["MIT"],
       maintainers: ["Alex Kwiatkowski"],
-      links: %{"GitHub" => "https://github.com/fremantle-capital/ex_ftx"}
+      links: %{"GitHub" => "https://github.com/fremantle-industries/ex_ftx"}
     }
   end
 end

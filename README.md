@@ -1,5 +1,5 @@
 # ExFtx
-[![Build Status](https://github.com/fremantle-capital/ex_ftx/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-capital/ex_ftx/actions?query=workflow%3Atest)
+[![Build Status](https://github.com/fremantle-industries/ex_ftx/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-industries/ex_ftx/actions?query=workflow%3Atest)
 [![hex.pm version](https://img.shields.io/hexpm/v/ex_ftx.svg?style=flat)](https://hex.pm/packages/ex_ftx)
 
 FTX API Client for Elixir
